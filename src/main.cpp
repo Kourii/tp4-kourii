@@ -3,7 +3,7 @@
  *						<Module description>
  *
  *						<Copyright>
- *
+ * 
  *						<Copyright or distribution terms>
  *
  *
@@ -96,16 +96,16 @@ Tabla de conversion bcd a 7 segmentos cátodo común
 */
 
 //                                FEDCBA G
-uint8_t Tabla_Digitos_7seg[] = {0b01111110,//0	
-								0b00110000,//1	
+uint8_t Tabla_Digitos_7seg[] = {0b11111100,//0	
+								0b00011000,//1	
 								0b01101101,//2	
-								0b01111001,//3	
-								0b00110011,//4	
-								0b01011011,//5	
-								0b00011111,//6	
-								0b01110000,//7	
-								0b01111111,//8	
-								0b01110011 //9	
+								0b00111101,//3	
+								0b10011001,//4	
+								0b10110101,//5	
+								0b11110101,//6	
+								0b00011100,//7	
+								0b11111101,//8	
+								0b10011101 //9	
 								};
 
 // static uint8_t Tabla_Digitos_BCD_7seg[ ] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -116,7 +116,7 @@ uint8_t Tabla_Digitos_7seg[] = {0b01111110,//0
  *   módulo seguida de un _
  *   ej: MEM_POOL  Mem_PoolHeap;
  *********************************************************************************************************/
-uint16_t cont = 0;
+int16_t cont = 0;
 uint32_t i = 0;
 /*********************************************************************************************************
  *** VARIABLES GLOBALES PRIVADAS AL MODULO
@@ -208,7 +208,7 @@ int main(void)
 			if (bot2 == 0)
 			{
 				cont--;
-				if (cont < 0)
+				if (cont<0)
 				{
 					cont = 9;
 				}
