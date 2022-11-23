@@ -114,7 +114,6 @@ uint8_t Tabla_Digitos_7seg[] = {0b11111100,//0
  *   ej: MEM_POOL  Mem_PoolHeap;
  *********************************************************************************************************/
 int16_t cont = 0;
-uint32_t i = 0;
 /*********************************************************************************************************
  *** VARIABLES GLOBALES PRIVADAS AL MODULO
  *   se declaran con static y se escriben en CamelCase y están precedidas por la
