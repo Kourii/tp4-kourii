@@ -49,9 +49,9 @@ PB1 -> SEGMENTO DP
 
 ![Circuito](circuito.png "circuito")
 
----
+----
 
-#INFORME
+# INFORME
 
 ``` C
 #define bot1 ((PINC>>PC0)&0x01)
@@ -137,3 +137,7 @@ PORTD= (PORTD & 0b00000011)|(Tabla_Digitos_7seg[cont]&0b11111100);
 PORTB= (PORTB & 0b11111100)|(Tabla_Digitos_7seg[cont]&0b00000011);
 ```
 Gracias a estas dos lineas de código se van a enviar los numeros del contador al display usando la tabla de digitos con respecto al contador(cont).
+
+## Diagrama
+
+![Diagrama](diagrama.svg "diagrama")
